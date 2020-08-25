@@ -5,11 +5,9 @@ import {ListItem, Button, Input} from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome'
 
 import socketIOClient from "socket.io-client";
+import Constants from 'expo-constants';
 
-const dotenv = require("dotenv");
-dotenv.config();
-
-var socket = socketIOClient(process.env.REACT_NATIVE_QUOTAGUARDSTATIC_URL, { forceNode: true });
+var socket = socketIOClient(Constants.manifest.extra.backendURL, { forceNode: true });
 
 export default function ChatScreen() {
 

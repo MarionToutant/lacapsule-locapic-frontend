@@ -8,13 +8,12 @@ import MapView,{Marker} from 'react-native-maps';
 import * as Location from 'expo-location';
 import * as Permissions from 'expo-permissions';
 
-import socketIOClient from "socket.io-client";
 import {connect} from 'react-redux';
 
-const dotenv = require("dotenv");
-dotenv.config();
+import socketIOClient from "socket.io-client";
+import Constants from 'expo-constants';
 
-var socket = socketIOClient(process.env.REACT_NATIVE_QUOTAGUARDSTATIC_URL, { forceNode: true });
+var socket = socketIOClient(Constants.manifest.extra.backendURL, { forceNode: true });
 
 function MapScreen(props) {
 

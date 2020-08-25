@@ -12,10 +12,10 @@ export default {
       ],
       version: "1.0.0",
       orientation: "portrait",
-      icon: "./assets/icon.png",
+      icon: "./assets/pin-blue.png",
       splash: {
-        image: "./assets/splash.png",
-        resizeMode: "contain",
+        image: "./assets/splash2.png",
+        resizeMode: "cover",
         backgroundColor: "#ffffff"
       },
       updates: {
@@ -37,6 +37,9 @@ export default {
             apiKey: process.env.REACT_NATIVE_API_KEY
           }
         }
+      },
+      extra: {
+        backendURL: process.env.REACT_NATIVE_QUOTAGUARDSTATIC_URL
       }
     }
 }
