@@ -3,8 +3,8 @@ dotenv.config();
 
 export default {
     expo: {
-      name: "locapic",
-      slug: "locapic",
+      name: "Locapic",
+      slug: "Locapic",
       platforms: [
         "ios",
         "android",
@@ -39,7 +39,7 @@ export default {
         }
       },
       extra: {
-        backendURL: process.env.REACT_NATIVE_QUOTAGUARDSTATIC_URL
+        backendURL: process.env.REACT_NATIVE_URL
       }
     }
 }
