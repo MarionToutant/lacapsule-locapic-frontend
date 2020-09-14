@@ -12,7 +12,7 @@ export default {
       ],
       version: "1.0.0",
       orientation: "portrait",
-      icon: "./assets/pin-blue.png",
+      icon: "./assets/blue-pin.png",
       splash: {
         image: "./assets/splash2.png",
         resizeMode: "cover",
